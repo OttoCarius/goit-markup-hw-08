@@ -10,12 +10,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
-  & .modal {
+  &.modal {
     visibility: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.9);
@@ -51,10 +51,10 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-
-  &:hover .modal__icon {
-  fill: $colorSecondary;
 }
+
+.modal__btn:hover .modal__icon {
+  fill: $colorSecondary;
 }
 
 .modal__icon {
