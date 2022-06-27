@@ -1,0 +1,32 @@
+@import './utils/variables';
+@import './utils/mixin';
+@import './base/global';
+
+@import './components/page-header';
+@import './components/logo-header';
+@import './components/logo-footer';
+@import './components/hero-btn';
+@import './components/modal-btn';
+
+@import './loyaut/header/header';
+@import './loyaut/header/header-nav';
+@import './loyaut/header/header-cont';
+
+@import './loyaut/index/index-hero';
+@import './loyaut/index/index-special';
+@import './loyaut/index/index-work';
+@import './loyaut/index/index-team';
+@import './loyaut/index/index-social';
+@import './loyaut/index/index-customers';
+
+@import './loyaut/index/modal/modal';
+@import './loyaut/index/modal/modal';
+@import './loyaut/index/modal/fieldset';
+@import './loyaut/index/modal/checkbox';
+
+@import './loyaut/footer/footer-adress';
+@import './loyaut/footer/footer-join';
+@import './loyaut/footer/footer-subs';
+
+@import './loyaut/portfolio/portfolio-categor';
+@import './loyaut/portfolio/portfolio-projects';
