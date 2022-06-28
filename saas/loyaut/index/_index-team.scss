@@ -5,57 +5,133 @@
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  //   font-size: 36px;
+  //   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  //   margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.166;
+
+    margin-bottom: 50px;
+  }
 }
 
-.team__list .team__job {
+.team__list {
+  list-style: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.team__item {
+  background-color: $bgColorPrimary;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.team__img {
+  display: block;
+  width: calc(100vw - 30px);
+  max-width: 450px;
+  height: auto;
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.team__pictures {
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
+}
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.team__job {
   color: $colorTertiary;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.team__list {
-  display: flex;
-  list-style-type: none;
-  /* justify-content: space-between; */
+// .team__list .team__job {
+//   color: $colorTertiary;
+//   font-size: 16px;
+//   line-height: 1.19;
+//   text-align: center;
+// }
 
-  & > li:not(:first-child) {
-    margin-left: 30px;
-  }
+// .team__list {
+//   display: flex;
+//   list-style-type: none;
+//   /* justify-content: space-between; */
 
-  & li {
-    background-color: $bgColorPrimary;
-  }
-}
+//   & > li:not(:first-child) {
+//     margin-left: 30px;
+//   }
 
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-bottom: 10px;
-}
+//   & li {
+//     background-color: $bgColorPrimary;
+//   }
+// }
 
-.team__pictures {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+// .team__name {
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.19;
+//   text-align: center;
+//   margin-bottom: 10px;
+// }
 
-.team__item {
-  background: $bgColorPrimary;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+// .team__pictures {
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+// }
 
-  & img {
-    display: block;
-  }
-}
+// .team__item {
+//   background: $bgColorPrimary;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
 
-.team__job {
-  margin-bottom: 16px;
-}
+//   & img {
+//     display: block;
+//   }
+// }
+
+// .team__job {
+//   margin-bottom: 16px;
+// }

@@ -1,11 +1,22 @@
-.subscription {
-  margin-left: 93px;
-}
+// .subscription {
+//   //   margin-left: 93px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   @media screen and (min-width: $tablet) {
+//     margin-top: 60px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     // margin-top: 0px;
+//     margin-left: 93px;
+//     // padding-top: 12px;
+//   }
+// }
 
-.subscription__form {
-  display: flex;
-  flex-direction: column;
-}
+// .subscription__form {
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .subscription__title {
   font-weight: 700;
@@ -13,38 +24,62 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: block;
 
   color: $colorHero;
   min-width: 219px;
   height: 16px;
 
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .subscription__wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .subscription__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
+  //   width: 358px;
+  width: 100%;
+  max-width: 450px;
   padding: 15px 0px 15px 16px;
   background-color: $bgColorSecondary;
+  margin-bottom: 20px;
+  line-height: 1.25;
 
   color: $colorHero;
 
-  &::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-
-    color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: $tablet) {
+    width: 450px;
   }
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
+.subscription__input::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscription__icon {
@@ -70,7 +105,6 @@
   min-width: 200px;
   height: 50px;
 
-  margin-left: 12px;
   padding: 10px 28px 10px 29px;
 
   background: $btnbgColor;

@@ -1,26 +1,73 @@
 .hero {
   background-color: $bgColorSecondary;
-  padding: 200px 0px;
+  // padding: 200px 0px;
   text-align: center;
-  margin: auto auto;
+  margin-inline: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
+    url(/images/hero-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
+  // max-width: 1600px;
+  // margin: auto auto;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-mob@x2.jpg);
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-tab.jpg);
+    // max-width: 768px;
+    margin-inline: auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero-tab@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-desk.jpg);
+    max-width: 1600px;
+    margin-inline: auto;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero-desk@2x.jpg);
+    }
+  }
 }
+.hero--wrapper {
+  padding: 118px 60px;
+  @media screen and (min-width: $tablet) {
+    padding: 118px 204px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0px;
+  }
+}
+
 .hero__title {
   color: $colorHero;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  // font-size: 44px;
+  // line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
-  margin: auto;
+  // max-width: 696px;
+  // margin: auto;
   margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.62;
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 20px;
+    line-height: 1.36;
+  }
 }
 
 .backdrop .is-hidden {
@@ -51,5 +98,8 @@
   &:hover,
   &:focus {
     background-color: $btnbgColorHov;
+  }
+  @media screen and (max-width: 479px) {
+    padding: 5px 16px;
   }
 }
