@@ -7,14 +7,28 @@
 }
 
 .categories {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // justify-content: center;
+  // margin-bottom: 50px;
   list-style-type: none;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
-.categories__item:not(:first-child) {
-  margin-left: 8px;
+  column-gap: 8px;
+  row-gap: 15px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+  .categories__item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 
 .categories__btn {
