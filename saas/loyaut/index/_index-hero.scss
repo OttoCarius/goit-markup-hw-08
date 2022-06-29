@@ -86,36 +86,6 @@
   }
 }
 
-// .hero--wrapper {
-//   padding: 118px 60px;
-//   @media screen and (min-width: $tablet) {
-//     padding: 118px 204px;
-//   }
-//   @media screen and (min-width: $desktop) {
-//     padding: 200px 0px;
-//   }
-// }
-
-.hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 360px;
-  margin-bottom: 30px;
-  font-size: 26px;
-
-  color: $colorHero;
-  text-transform: uppercase;
-  font-weight: 900;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
-
-  @include mq(desc) {
-    max-width: 700px;
-    font-size: 44px;
-    line-height: 1.36;
-  }
-}
-
 // .hero__title {
 //   color: $colorHero;
 //   font-weight: 900;
@@ -124,8 +94,8 @@
 //   text-align: center;
 //   letter-spacing: 0.06em;
 //   text-transform: uppercase;
-//   // max-width: 696px;
-//   // margin: auto;
+//   max-width: 360px;
+//   margin: auto;
 //   margin-bottom: 30px;
 //   font-size: 26px;
 //   line-height: 1.62;
@@ -138,6 +108,25 @@
 //     line-height: 1.36;
 //   }
 // }
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  margin-bottom: 30px;
+  font-size: 26px;
+
+  color: $colorHero;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  @include mq(desc) {
+    max-width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .backdrop .is-hidden {
   opacity: 0;
@@ -172,3 +161,33 @@
     padding: 5px 16px;
   }
 }
+
+// .hero--wrapper {
+//   padding: 118px 60px;
+//   @media screen and (min-width: $tablet) {
+//     padding: 118px 204px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     padding: 200px 0px;
+//   }
+// }
+
+// .hero__title {
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 360px;
+//   margin-bottom: 30px;
+//   font-size: 26px;
+
+//   color: $colorHero;
+//   text-transform: uppercase;
+//   font-weight: 900;
+//   line-height: 1.62;
+//   letter-spacing: 0.06em;
+
+//   @include mq(desc) {
+//     max-width: 700px;
+//     font-size: 44px;
+//     line-height: 1.36;
+//   }
+// }
