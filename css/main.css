@@ -98,6 +98,8 @@ ul {
 }
 .header__menu.is-open {
   display: block;
+  position: fixed;
+  right: 30px;
 }
 .header__menu.is-open + .menu {
   display: block;
@@ -154,6 +156,8 @@ ul {
     padding: 48px 40px;
     margin-left: 0px;
     overflow-y: scroll;
+    position: fixed;
+    right: 30px;
   }
   .menu.is-open .navigation {
     display: block;
@@ -736,6 +740,7 @@ ul {
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #f5f4fa;
 }
 @media screen and (min-width: 1200px) {
   .team {

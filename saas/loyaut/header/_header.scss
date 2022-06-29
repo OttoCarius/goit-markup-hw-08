@@ -52,6 +52,8 @@
 
   &.is-open {
     display: block;
+    position: fixed;
+    right: 30px;
   }
 
   &.is-open + .menu {
@@ -87,6 +89,7 @@
   padding: 48px 40px;
   background-color: $bgColorPrimary;
   // position: fixed;
+
   overflow-y: scroll;
   //
 
@@ -109,7 +112,10 @@
       padding: 48px 40px;
       margin-left: 0px;
       overflow-y: scroll;
+      position: fixed;
+      right: 30px;
     }
+
     &.is-open .navigation {
       display: block;
       margin-right: 0px;
