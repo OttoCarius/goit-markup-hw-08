@@ -1,5 +1,10 @@
 .projects {
-  @include section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    @include section;
+  }
 }
 
 .projects__title {
@@ -26,9 +31,9 @@
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
-  .categories__item:not(:first-child) {
-    margin-left: 8px;
-  }
+  // .categories__item:not(:first-child) {
+  //   margin-left: 8px;
+  // }
 }
 
 .categories__btn {

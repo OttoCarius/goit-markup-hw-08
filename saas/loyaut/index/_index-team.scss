@@ -1,6 +1,15 @@
+// .team {
+//   @include section;
+//   background-color: $bgcolorquaternary;
+// }
 .team {
-  @include section;
-  background-color: $bgcolorquaternary;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    @include section;
+    background-color: $bgcolorquaternary;
+  }
 }
 
 .team__title {
